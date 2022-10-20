@@ -21,19 +21,65 @@ int main()
     while (true)
     {
         //On for 500ms
-        greenLED = 1;
-        buzz.playTone("C");
-        wait_us(WAIT_TIME_MS * 1000);  //500ms
-
-
-        //Off for 500ms
+       greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 300); 
         greenLED = 0;
-        buzz.playTone("C", Buzzer::HIGHER_OCTAVE);
-        wait_us(WAIT_TIME_MS * 1000);  //500ms
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 300);         
+        greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 300); 
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 300);  
+        greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 300); 
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 900);
+
+        greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 900); 
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 300);         
+        greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 900); 
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 300);  
+        greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 900); 
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 900);        
+
+        greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 300); 
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 300);         
+        greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 300); 
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 300);  
+        greenLED = 1;
+         buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 300); 
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 900);
 
         //Pause
         buzz.rest();
         wait_us(WAIT_TIME_MS * 1000);
-
     }
 }
